@@ -14,10 +14,10 @@ MSSFMLView::MSSFMLView(MinesweeperBoard & b) : board(b)
 
 }
 
-void MSSFMLView::draw (sf::RenderWindow & win )
+void MSSFMLView::draw (sf::RenderWindow & win ) const
 {
     sf::Font font;
-   font.loadFromFile("C:\\Windows\\Fonts\\arialbd.ttf");
+   font.loadFromFile(R"(C:\Windows\Fonts\arialbd.ttf)");
     sf::Text Text;
 Text.setFont(font);
 
@@ -27,7 +27,7 @@ if(board.getBoardWidth()<=10 or board.getBoardHeight()<=10)
 {
         Size =80;
 }
-if(board.getBoardWidth()>10 and board.getBoardWidth()<=40 or board.getBoardWidth()>10 and board.getBoardHeight()<=40)
+if((board.getBoardWidth()>10 and board.getBoardWidth()<=40) or (board.getBoardWidth()>10 and board.getBoardHeight()<=40))
 {
     Size =20;
 }

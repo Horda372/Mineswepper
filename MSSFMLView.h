@@ -25,7 +25,7 @@ public:
     sf::RectangleShape pole_odkryte();
     sf::CircleShape mina();
     sf::RectangleShape flaga();
-    void draw (sf::RenderWindow & win);
+    void draw (sf::RenderWindow & win) const;
 
 
 };

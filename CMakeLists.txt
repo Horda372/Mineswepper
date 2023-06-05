@@ -1,8 +1,6 @@
 cmake_minimum_required(VERSION 3.11)
-#cmake_minimum_required(VERSION 3.15)
-# Proszę zmienić wymaganą wersję CMake na niższą - wystarczy 3.11
 
-#project(Saper)
+
 project(MinesweeperBoard)
 
 set(CMAKE_VERBOSE_MAKEFILE ON)
@@ -32,7 +30,7 @@ if (WIN32)
     set( SFML_STATIC_LIBRARIES TRUE )
 
     # Jeśli zainstalowaliście w innym miejscu to trzeba tu zmienić katalog na właściwy
-    set ( SFML_DIR "C:/SFML-2.5.1/lib/cmake/SFML/")
+    set ( SFML_DIR "C:/SFML-2.5.1/SFML-2.5.1/lib/cmake/SFML/")
 endif(WIN32)
 
 

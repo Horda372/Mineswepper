@@ -11,38 +11,9 @@ using namespace std;
 
 void intro()
 {
-    cout<<"Jan Hordyński 36\n";
+    cout<<"Jan Hordyński\n";
 }
-/*
-int main() {
-    srand(time(nullptr));
-    intro();
 
-    MinesweeperBoard plansza ={4 , 5, HARD};
-    plansza.debug_display();
-    cout<<"Wysokosc: "<< plansza.getBoardHeight()<<endl;
-    cout<<"Szerokosc: "<< plansza.getBoardWidth()<<endl;
-    plansza.revealField(2,2);
-    cout<<"Miny dookola: " << plansza.countMines(0,0)<<endl;
-    cout<<plansza.getFieldInfo(1,1)<<endl;
-    plansza.debug_display();
-    //UWWAGA!! wpisuje numer kolumny liczonej od 0!!
-
-    return 0;
-}
-*/
-
-/*
-int main()
-{
-    srand(time(nullptr));
-    MinesweeperBoard board (6, 7, GameMode::HARD);
-    MSBoardTextView view (board);
-    view.display();
-    board.revealField(0,5);
-    view.display();
-}//Tylko wyśitle nie z get field info
-*/
 
 
 //int main()
