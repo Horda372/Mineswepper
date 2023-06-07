@@ -14,8 +14,6 @@ void intro()
     cout<<"Jan Hordyński\n";
 }
 
-
-
 //int main()
 //{
 //    srand(time(nullptr));
@@ -25,7 +23,6 @@ void intro()
 //    ctrl.play();
 //}
 
-
 int main()
 {
     srand(time(nullptr));
@@ -33,13 +30,9 @@ int main()
     window.setVerticalSyncEnabled(false);
     window.setFramerateLimit(30);
 
-    MinesweeperBoard board(4, 7, EASY);
+    MinesweeperBoard board(10, 10, EASY);
 
- //   board.toggleFlag(10,10);
-    board.revealField(2,2);
-//    board.revealField(30,30);
-//    board.revealField(22,22);
-//    board.revealField(31,31);
+  //  board.revealField(2,2);
 
     MSBoardTextView widok ( board );
     MSTextController ctrl(board, widok);
@@ -47,7 +40,7 @@ int main()
     Myszka ruch (board, view);
 
 board.debug_display();
-board.displej();
+//board.displej();
 
     while (window.isOpen())
     {

@@ -1,13 +1,11 @@
 #include <iostream>
 #include "MinesweeperBoard.h"
 
-
 #include <SFML/Graphics.hpp>
 
 #include "MSSFMLView.h"
 
 using namespace std;
-
 
 MSSFMLView::MSSFMLView(MinesweeperBoard & b) : board(b)
 {
